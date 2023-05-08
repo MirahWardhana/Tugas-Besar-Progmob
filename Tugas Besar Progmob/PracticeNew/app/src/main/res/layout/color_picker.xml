@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textHexValue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SeekBar
+        android:id="@+id/sbRed"
+        android:layout_width="236dp"
+        android:layout_height="36dp"
+        android:thumbTint="#FF0000"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="347dp"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/sbGreen"
+        android:layout_width="236dp"
+        android:layout_height="36dp"
+        android:thumbTint="#00FF04"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <SeekBar
+        android:id="@+id/sbBlue"
+        android:layout_width="236dp"
+        android:layout_height="36dp"
+        android:thumbTint="#0042FF"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hex value"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <TextView
+        android:id="@+id/textRGBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rgba"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="588dp" />
+
+    <TextView
+        android:id="@+id/textRGBA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(0,0,0,0)"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="588dp" />
+
+    <TextView
+        android:id="@+id/textHexValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#000000"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <SeekBar
+        android:id="@+id/sbAlfa"
+        android:layout_width="236dp"
+        android:layout_height="36dp"
+        android:thumbTint="#000000"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="346dp"
+        android:layout_height="271dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <Button
+        android:id="@+id/buttonOkay"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:text="okay"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="632dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

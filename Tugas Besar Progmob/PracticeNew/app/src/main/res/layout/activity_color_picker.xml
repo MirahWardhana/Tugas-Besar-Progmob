@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textHexValue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <SeekBar
+        android:id="@+id/sbRed"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        android:max="255"
+        android:min="0"
+        android:thumbTint="#FF0000"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/sbGreen"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:max="255"
+        android:min="0"
+        android:thumbTint="#00FF04"
+        app:layout_constraintStart_toStartOf="@+id/sbRed"
+        app:layout_constraintTop_toBottomOf="@+id/sbRed"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/sbBlue"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:max="255"
+        android:min="0"
+        android:thumbTint="#0042FF"
+        app:layout_constraintStart_toStartOf="@+id/sbGreen"
+        app:layout_constraintTop_toBottomOf="@+id/sbGreen"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:text="hex value"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbAlfa"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textRGBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="14dp"
+        android:text="rgba"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textHexValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="72dp"
+        android:text="#000000"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/sbAlfa"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textRGBA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"
+        android:text="(000,000,000,000)"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toEndOf="@+id/textRGBA"
+        app:layout_constraintTop_toBottomOf="@+id/textHexValue2"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/sbAlfa"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:max="255"
+        android:min="0"
+        android:thumbTint="#000000"
+        app:layout_constraintStart_toStartOf="@+id/sbBlue"
+        app:layout_constraintTop_toBottomOf="@+id/sbBlue"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="265dp"
+        android:layout_height="253dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="374dp"
+        android:layout_height="293dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036"
+        app:srcCompat="@drawable/colorpick" />
+
+    <Button
+        android:id="@+id/buttonOkay"
+        android:layout_width="265dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="okay"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRGBA2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textRed"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="72dp"
+        android:text="000"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sbRed"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textGreen"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:text="000"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textRed"
+        app:layout_constraintTop_toBottomOf="@+id/textRed"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textBlue"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="000"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textGreen"
+        app:layout_constraintTop_toBottomOf="@+id/textGreen" />
+
+    <TextView
+        android:id="@+id/textAlfa"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="000"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textBlue"
+        app:layout_constraintTop_toBottomOf="@+id/textBlue" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

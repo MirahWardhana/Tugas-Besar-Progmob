@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sizing2">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="361dp"
+        android:layout_height="489dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sizing2" />
+
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="152dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="190dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextNumber6"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextNumber7"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginBottom="260dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/buttonSizing"
+        android:layout_width="349dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="OKAY"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

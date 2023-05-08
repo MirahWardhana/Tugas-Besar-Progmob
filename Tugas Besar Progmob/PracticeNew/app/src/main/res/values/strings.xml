@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Sofa Studio</string>
+
+    <string-array name="order_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="order_date">
+        <item>01-02-2020</item>
+        <item>01-02-2023</item>
+        <item>01-03-2023</item>
+        <item>01-02-2020</item>
+        <item>01-02-2023</item>
+        <item>01-03-2023</item>
+        <item>01-02-2020</item>
+        <item>01-02-2023</item>
+    </string-array>
+    <string-array name="order_status">
+        <item>order on progress</item>
+        <item>order succeed</item>
+        <item>order on progress</item>
+        <item>order succeed</item>
+        <item>order on progress</item>
+        <item>order succeed</item>
+        <item>order on progress</item>
+        <item>order cancelled</item>
+    </string-array>
+
+</resources>

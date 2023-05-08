@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Final">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="YOUR ORDER IS ALMOST COMPLETE!"
+        android:textColor="@color/black"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textNote"
+        android:layout_width="277dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Leave a note"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="please make sure your order is in the right shape, measurment or color. let us know if there's another preference you'd like to add by leaving a note below."
+        android:textColor="@color/grey"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/buttonFinalOrder"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="create order"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/textNote"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textNote"
+        app:layout_constraintTop_toBottomOf="@+id/textNote" />
+
+    <Button
+        android:id="@+id/buttonCancelOrder"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button_stroke"
+        android:text="cancel"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFinalOrder"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonFinalOrder"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFinalOrder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
