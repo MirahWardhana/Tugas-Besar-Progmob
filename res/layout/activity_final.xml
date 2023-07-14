@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_brown_view"
+    tools:context=".Final">
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="347dp"
+        android:layout_height="573dp"
+        android:background="@drawable/rounded_view_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <Button
+        android:id="@+id/buttonCancelOrder"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_button_stroke"
+        android:text="cancel"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCreateOrder"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonCreateOrder"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreateOrder" />
+
+
+    <Button
+        android:id="@+id/buttonCreateOrder"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="create order"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/textNote4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textNote4"
+        app:layout_constraintTop_toBottomOf="@+id/textNote4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/font1"
+        android:text="please make sure your order is in the right shape, measurment or color. let us know if there's another preference you'd like to add by leaving a note below."
+        android:textColor="@color/grey"
+        android:textSize="5pt"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="344dp"
+        android:text="YOUR ORDER IS ALMOST COMPLETE!"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textNote4"
+        android:layout_width="277dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/font1"
+        android:inputType="textPersonName"
+        android:hint="Leave a note"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:text="MATERIAL"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view6" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_height="37dp"
+        android:text="Fabric"
+        android:layout_width="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupFabric"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupFabric"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupFabric" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_height="37dp"
+        android:text="Wood"
+        android:layout_width="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupWood"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupWood"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupFabric" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupFabric"
+        android:layout_width="140dp"
+        android:layout_height="147dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        <RadioButton
+            android:id="@+id/radioButtonCotton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:text="Cotton"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonLinen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:text="Linen"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonLeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:text="Faux Leather"
+            android:onClick="checkButton"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupWood"
+        android:layout_width="140dp"
+        android:layout_height="147dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        <RadioButton
+            android:id="@+id/radioButtonOak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:text="Oak"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonMahogany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:text="Mahogany"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonTeak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font1"
+            android:text="Teak"
+            android:onClick="checkButton"
+            android:checked="true"/>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
